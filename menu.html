@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — B;tches Be Bake'n</title>
+  <meta name="description" content="Full menu: sourdough loaves, sinny rolls, muffins, brownies, cookies, and more. Small batch, Boise Idaho." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .menu-hero {
+      position: relative;
+      padding: calc(var(--nav-h) + 3.5rem) 0 3.5rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .menu-hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/bg-boules-multi-shelf-rack.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.2);
+    }
+    .menu-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(15,15,15,0.3), rgba(15,15,15,0.85));
+    }
+    .menu-hero__content { position: relative; z-index: 2; }
+    .menu-hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); color: var(--white); }
+    .menu-hero p  { opacity: 0.7; margin-top: 0.75rem; font-size: 1.05rem; }
+
+    .menu-note {
+      background: rgba(212,130,10,0.1);
+      border: 1px solid rgba(212,130,10,0.3);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      font-size: 0.875rem;
+      color: var(--gold2);
+      margin-bottom: 3rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="images/brand-logo-art-sugar-skull-bakers.jpg" alt="B;tches Be Bake'n logo" class="nav__logo-img" />
+      <div class="nav__logo-text">
+        B;tches Be Bake'n
+        <span>Sourdough Cottage Bakery</span>
+      </div>
+    </a>
+    <button id="navToggle" class="nav__toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="navLinks" class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="order.html" class="nav__order-btn">Order Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="menu-hero">
+  <div class="menu-hero__bg"></div>
+  <div class="menu-hero__overlay"></div>
+  <div class="menu-hero__content container">
+    <p class="section-label">Small Batch · Boise, Idaho</p>
+    <h1>The Menu</h1>
+    <p>Everything is baked fresh to order. Availability rotates — order early.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="menu-note">
+      <span>📋</span>
+      <span>Menu items rotate seasonally. Text <strong>405-999-2071</strong> or <a href="order.html">fill out the order form</a> to check current availability and place an order. Orders placed by Wednesday for weekend pickup.</span>
+    </div>
+
+    <!-- LOAVES -->
+    <div class="menu-category">
+      <div class="menu-category__header">
+        <span class="menu-category__icon">🍞</span>
+        <h2>Loaves</h2>
+      </div>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <img src="images/rustic-boule-open-ear.jpg" alt="Rustic Traditional Sourdough" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Rustic Traditional</h3>
+            <p class="product-card__desc">Crispy, tangy sourdough with 24-hour cold fermentation. Open crumb, crackling crust. Classic.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$10</span>
+              <span class="product-card__tag">Boule</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/sandwich-loaf-cooling-rack.jpg" alt="Sandwich Style Loaf" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Sandwich Style</h3>
+            <p class="product-card__desc">Soft, buttery sourdough in a pullman-style loaf. Perfect for toast, french toast, or grilled cheese.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$10</span>
+              <span class="product-card__tag">Sandwich Loaf</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/jalapeno-cheddar-loaf-closeup.jpg" alt="Inclusion Loaf" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Inclusion Loaves</h3>
+            <p class="product-card__desc">Rustic sourdough with swirled-in flavors. Ask about current flavors — Jalapeño Cheddar, Roasted Garlic &amp; Herb, Garlic Parm, and more.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$14</span>
+              <span class="product-card__tag">Inclusion</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/mini-rustic-boule-packaged.jpg" alt="Mini Rustic Boule" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Mini Rustic Boule</h3>
+            <p class="product-card__desc">The classic in a personal size. Great for soup bowls, sharing, or gifting.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$5</span>
+              <span class="product-card__tag">Mini Boule</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- PASTRIES -->
+    <div class="menu-category">
+      <div class="menu-category__header">
+        <span class="menu-category__icon">🌀</span>
+        <h2>Pastries</h2>
+      </div>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <img src="images/sinny-rolls-pan-baked.jpg" alt="Sinny Rolls" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Sinny Rolls</h3>
+            <p class="product-card__desc">Sourdough cinnamon rolls with cream cheese icing on the side. Pillowy soft with a deep cinnamon swirl.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$15 / 4pk</span>
+              <span class="product-card__tag">4-Pack</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/double-chocolate-brownies-tray.jpg" alt="Double Chocolate Brownies" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Double Chocolate Brownies <span class="badge-new">New</span></h3>
+            <p class="product-card__desc">Fudgy, dense sourdough brownies with crinkle tops. Dark chocolate throughout. 4-pack.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$10 / 4pk</span>
+              <span class="product-card__tag">4-Pack</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/blueberry-muffins-tin.jpg" alt="Moody Blue Muffins" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Moody Blue Muffins</h3>
+            <p class="product-card__desc">Sourdough blueberry muffins with bakery-style domed tops, packed with berries in tulip wrappers.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$15 / 4pk</span>
+              <span class="product-card__tag">4-Pack</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/double-chocolate-muffins-tray.jpg" alt="Double Chocolate Muffins" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Double Chocolate Muffins <span class="badge-new">New</span></h3>
+            <p class="product-card__desc">Marble-swirled sourdough muffins with rich chocolate and vanilla batter. Bakery-style tulip wrapped.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$15 / 4pk</span>
+              <span class="product-card__tag">4-Pack</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- COOKIES -->
+    <div class="menu-category">
+      <div class="menu-category__header">
+        <span class="menu-category__icon">🍪</span>
+        <h2>Cookies <span class="badge-new">New</span></h2>
+      </div>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <img src="images/chocolate-chip-cookies-rack.jpg" alt="Cake Style Chocolate Chip" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Cake Style Choc Chip</h3>
+            <p class="product-card__desc">Thick, pillowy sourdough chocolate chip cookies — cakey texture, loaded with chips.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$10 / 6 · $18 / doz</span>
+              <span class="product-card__tag">Cookie</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/chocolate-chip-cookies-rack.jpg" alt="Browned Butter Chewy Chip" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Browned Butter Chewy Chip</h3>
+            <p class="product-card__desc">Sourdough chocolate chip with browned butter for a rich, toffee-like depth. Chewy center, crisp edge.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$10 / 6 · $18 / doz</span>
+              <span class="product-card__tag">Cookie</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/snickerdoodle-cookies-rack.jpg" alt="Snickerdoodle Cookies" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Snickerdoodle</h3>
+            <p class="product-card__desc">Classic cinnamon sugar sourdough snickerdoodles — soft, tangy, and perfectly rolled in spice.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$10 / 6 · $18 / doz</span>
+              <span class="product-card__tag">Cookie</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/cowboy-cookies-packaged.jpg" alt="Cowboy Cookies" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Cowboy Cookies</h3>
+            <p class="product-card__desc">Sourdough cowboy cookies packed with oats, butterscotch, chocolate chips, pecans, and coconut.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$10 / 6 · $18 / doz</span>
+              <span class="product-card__tag">Cookie</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- EXTRAS -->
+    <div class="menu-category">
+      <div class="menu-category__header">
+        <span class="menu-category__icon">✨</span>
+        <h2>Extras &amp; Add-ons</h2>
+      </div>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <img src="images/sourdough-bread-bowl-soup.jpg" alt="Sourdough Bread Bowl" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Bread Bowls</h3>
+            <p class="product-card__desc">Mini rustic boules hollowed out for soup — great for broccoli cheddar, chili, or chowder.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">Inquire</span>
+              <span class="product-card__tag">Add-on</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/dog-treats-packaged.jpg" alt="Sourdough Dog Treats" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Sourdough Dog Treats</h3>
+            <p class="product-card__desc">Made with sourdough discard, egg whites, oats, and Lion's Mane powder. Your pup deserves fresh-baked too.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">Inquire</span>
+              <span class="product-card__tag">Pup Treats</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="images/jalapeno-cheddar-loaf-packaged.jpg" alt="Hot Honey" class="product-card__img" />
+          <div class="product-card__body">
+            <h3 class="product-card__name">Hot Honey</h3>
+            <p class="product-card__desc">House-made hot honey with crushed red pepper, garlic, and apple cider vinegar. Perfect with any loaf.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$5 / 4oz</span>
+              <span class="product-card__tag">Add-on</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="text-align:center; padding: 2rem 0;">
+      <p class="section-label">Ready?</p>
+      <h2 style="font-size:1.8rem; margin-bottom:1rem;">Place your order</h2>
+      <p style="opacity:0.7; margin-bottom:1.5rem;">Fill out the form or text us directly at 405-999-2071.</p>
+      <a href="order.html" class="btn btn--gold">Order Now</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <p class="footer__brand-name">B;tches Be Bake'n</p>
+      <p class="footer__brand-tag">Sourdough Cottage Bakery · Boise, Idaho</p>
+      <p style="font-size:0.85rem; opacity:0.55; line-height:1.6;">Products baked under Idaho Cottage Food Law. May contain wheat, dairy, eggs, and nuts.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Find Us</h4>
+      <ul>
+        <li><a href="sms:4059992071">📱 405-999-2071</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61573889138584" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/Bitches.Be.Baken" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 B;tches Be Bake'n. All rights reserved.</span>
+    <span>Boise, Idaho · Cottage Food Bakery</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
