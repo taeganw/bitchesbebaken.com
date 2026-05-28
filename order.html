@@ -27,6 +27,7 @@
         grid-template-areas: "summary" "items";
       }
       #menu-items { grid-area: items; }
+      .order-summary { grid-area: summary; }
     }
 
     /* Step indicator */
@@ -182,7 +183,6 @@
       padding: 1.5rem;
       position: sticky;
       top: calc(var(--nav-h) + 1rem);
-      grid-area: summary;
     }
     @media (max-width: 760px) {
       .order-summary {
