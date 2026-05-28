@@ -1,0 +1,25 @@
+# B;tches Be Bake'n
+
+Small-batch sourdough cottage bakery in Boise, Idaho.
+
+## Business Summary
+- Name: B;tches Be Bake'n
+- Category: Cottage bakery / sourdough bakery
+- Location: Boise, Idaho
+- Primary offer: Slow-fermented sourdough breads, rolls, muffins, brownies, cookies, and seasonal bakes
+- Fulfillment: Local pickup/meetup, pop-up market pickup, and limited delivery/shipping by arrangement
+
+## Order and Contact
+- Primary order page: /order.html
+- Menu page: /menu.html
+- About + contact page: /about.html
+- Phone/Text: 405-999-2071
+- Facebook: https://www.facebook.com/profile.php?id=61573889138584
+- Instagram: https://www.instagram.com/Bitches.Be.Baken
+
+## Policies and Legal
+- Privacy policy: /privacy.html
+- Cottage food disclosure appears on-site; products may contain common allergens such as wheat, dairy, eggs, and nuts.
+
+## Canonical Site URL
+- https://taeganw.github.io/bitchesbebaken.com/
