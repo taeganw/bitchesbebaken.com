@@ -197,21 +197,7 @@ h1, h2, h3, h4 {
 
 /* Mobile nav drawer */
 @media (max-width: 720px) {
-  .nav {
-    top: auto;
-    bottom: 0;
-    border-bottom: none;
-    border-top: 1px solid rgba(212,130,10,0.2);
-  }
-
   .nav__toggle { display: flex; }
-
-  .nav__logo-text {
-    font-size: 0.92rem;
-  }
-  .nav__logo-text span {
-    display: none;
-  }
 
   .nav__links {
     display: flex;
@@ -219,22 +205,15 @@ h1, h2, h3, h4 {
     align-items: stretch;
     gap: 0;
     position: fixed;
-    top: auto;
-    bottom: var(--nav-h);
-    right: 0;
-    left: auto;
-    width: min(230px, 88vw);
+    top: var(--nav-h);
+    left: 0; right: 0;
     background: rgba(15,15,15,0.98);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: none;
-    border-top: 1px solid rgba(212,130,10,0.2);
-    border-left: 1px solid rgba(212,130,10,0.2);
-    border-radius: 8px 0 0 0;
-    box-shadow: -4px -4px 24px rgba(0,0,0,0.5);
-    padding: 0.25rem 0 0;
+    border-bottom: 1px solid rgba(212,130,10,0.2);
+    padding: 0.5rem 0 1rem;
     /* hidden by default */
-    transform: translateY(8px);
+    transform: translateY(-8px);
     opacity: 0;
     pointer-events: none;
     transition: transform 0.25s ease, opacity 0.25s ease;
@@ -249,30 +228,18 @@ h1, h2, h3, h4 {
   .nav__links li { width: 100%; }
   .nav__links a {
     display: block;
-    width: 100%;
-    padding: 0.9rem 1.25rem;
-    font-size: 1.02rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
     border-radius: 0;
-    text-align: right;
-    border-top: 1px solid rgba(255,255,255,0.07);
   }
   .nav__links a:hover { background: rgba(255,255,255,0.04); }
 
   .nav__order-btn {
-    margin: 0 !important;
+    margin: 0.5rem 1.25rem 0 !important;
     display: block !important;
-    width: 100% !important;
-    text-align: right !important;
-    border-radius: 0 !important;
-    padding: 0.9rem 1.25rem !important;
-  }
-
-  body {
-    padding-bottom: calc(var(--nav-h) + 0.5rem);
-  }
-
-  .page-top {
-    padding-top: 0;
+    text-align: center !important;
+    border-radius: var(--radius) !important;
+    padding: 0.7rem 1rem !important;
   }
 }
 
